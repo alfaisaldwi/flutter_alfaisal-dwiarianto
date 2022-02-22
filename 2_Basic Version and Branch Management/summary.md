@@ -9,4 +9,5 @@
 1. Buat sebuah repository
 ![awal](https://user-images.githubusercontent.com/53627118/155147186-6b1a2212-8496-45d7-9d40-af7632170c47.png)
 
-2. 
+2. Branching Master,Development,FeatureA,FeatureB
+
