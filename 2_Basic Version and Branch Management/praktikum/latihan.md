@@ -1,1 +1,1 @@
-Tugasnya berada di Repository yang berbeda, dan dapat dilihat di [Repository ini ] (https://github.com/alfaisaldwi/Tugas1.git)
+Tugasnya berada di Repository yang berbeda, dan dapat dilihat di [Repository ini ](https://github.com/alfaisaldwi/Tugas1.git)
