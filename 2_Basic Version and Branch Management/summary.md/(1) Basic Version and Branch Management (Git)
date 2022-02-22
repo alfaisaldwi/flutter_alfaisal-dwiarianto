@@ -1,2 +1,3 @@
 1. Git dapat merekam semua perubahan file dari setiap contributor.
-2. Git 
+2. Git dapat mengembalikan file yang sudah diedit sebelumnya ke semula
+3. Fungsi Git adalah untuk berkolaborasi dengan developer lain untuk menyelesaikan sebuah task.
