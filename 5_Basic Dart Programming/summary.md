@@ -10,3 +10,9 @@ Resume :
     - string = Teks
     - bool = True or False
     - double = Bilangan Pecahan/Desimal
+    
+#Lanjutan
+
+- Anonymous Function memiliki ciri : Tidak memiliki nama dan Fungsi sebagai data.
+- Arrow Function memiliki ciri : Dapat memiliki nama atau tidak,Berisi 1 data dan Nilai return fungsi ini diambil dari data tersebut.
+- Async-Await : Menjalankan beberapa proses tanpa perlu menunggu, Proses ditulis dalam bentuk fungsi dan Await akan menunggu hingga proses Async selesai
