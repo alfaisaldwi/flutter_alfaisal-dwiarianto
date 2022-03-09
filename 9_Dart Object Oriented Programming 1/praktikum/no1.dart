@@ -4,21 +4,28 @@ class Hewan {
 }
 
 class Mobil {
-  int muatan = 60;
-  List hewan = [];
+  int kapasitas = 100;
+  List muatan = [];
+
+  tambahMuatan() {
+    var h1 = Hewan();
+    var h2 = Mobil();
+
+    if (h1.berat < h2.kapasitas) {
+      h2.muatan.add(h1.nama);
+      var tampilberat = h1.berat;
+      var sisa = h2.kapasitas - h1.berat;
+
+      print(
+          'Berat hewannya adalah $tampilberat kg dengan sisa kapasitas $sisa');
+      print('Jumlah hewan ${h2.muatan}');
+    } else {
+      print('Muatan Tidak Cukup');
+    }
+  }
 }
 
 void main() {
-  var h1 = Hewan();
-  var h2 = Mobil();
-
-  if (h2.muatan > h1.berat) {
-    h2.hewan.add(h1.nama);
-    var tampilberat = h1.berat;
-
-    print('Berat hewannya adalah $tampilberat kg');
-    print(h2.hewan);
-  } else {
-    print('Muatan Tidak Cukup');
-  }
+  var tampil = Mobil();
+  tampil.tambahMuatan();
 }
