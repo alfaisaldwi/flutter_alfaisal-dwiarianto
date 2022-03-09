@@ -18,7 +18,7 @@ class Mobil {
 
       print(
           'Berat hewannya adalah $tampilberat kg dengan sisa kapasitas $sisa');
-      print('Jumlah hewan ${h2.muatan}');
+      print('Nama hewan ${h2.muatan}');
     } else {
       print('Muatan Tidak Cukup');
     }
