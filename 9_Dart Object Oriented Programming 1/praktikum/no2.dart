@@ -4,31 +4,41 @@ class Hewan {
 }
 
 class Mobil {
-  int muatan = 40;
-  List hewan = [];
+  int kapasitas = 100;
+  List muatan = [];
 
-  void totalMuatan() {
+  tambahMuatan() {
     var h1 = Hewan();
+    var h2 = Mobil();
     var sum = 0;
     var tampilberat = (h1.berat);
     tampilberat.forEach((e) => sum += e);
-    print('Kapasitas Maksimal Muatannya adalah $muatan kg');
-    print('Berat Total Muatannya adalah ${sum} kg');
+    var sisa = h2.kapasitas - sum;
+
+
+    if (sum < h2.kapasitas) {
+      h2.muatan.add(h1.nama);
+
+      print('Nama hewan ${h2.muatan}');
+    } else {
+      print('Muatan Tidak Cukup');
+    }
   }
+
+  totalMuatan() {
+    var h1 = Hewan();
+    var h2 = Mobil();
+    var sum = 0;
+    var tampilberat = (h1.berat);
+    tampilberat.forEach((e) => sum += e);
+    var sisa = h2.kapasitas - sum;
+
+    print('Berat Total Hewannya adalah $sum kg dengan sisa kapasitas $sisa kg');
+  } 
 }
 
 void main() {
-  var h1 = Hewan();
-  var h2 = Mobil();
-  var sum = 0;
-  var tampilberat = (h1.berat);
-  tampilberat.forEach((e) => sum += e);
-  var total = Mobil().totalMuatan();
-
-  if (h2.muatan > sum) {
-    h2.hewan.add(h1.nama);
-    print('List nama Hewan =  ${h2.hewan}');
-  } else {
-    print('Muatan Tidak Cukup');
-  }
+  var tampil = Mobil();
+  tampil.tambahMuatan();
+  tampil.totalMuatan();
 }

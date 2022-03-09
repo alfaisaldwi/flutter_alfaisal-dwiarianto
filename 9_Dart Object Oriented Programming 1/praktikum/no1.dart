@@ -16,8 +16,7 @@ class Mobil {
       var tampilberat = h1.berat;
       var sisa = h2.kapasitas - h1.berat;
 
-      print(
-          'Berat hewannya adalah $tampilberat kg dengan sisa kapasitas $sisa');
+
       print('Nama hewan ${h2.muatan}');
     } else {
       print('Muatan Tidak Cukup');
