@@ -1,20 +1,27 @@
-void main() async{
-  List list = [
+void main() async {
+  List<List> list = [
     ['Indonesia', 'Jakarta'],
     ['Vietnam', 'Hanoi'],
     ['Malaysia', 'Kuala Lumpur'],
     ['Kamboja', 'Phnom Penh']
   ];
 
-  print('List Negara $list');
-  print('Map Negara : ');
-  for (var i = 0; i < list.length; i++) {
-    var negara = [list[i].first];
-    var kota = [list[i].last];
+  Map<String, String> listBaru = mapBaru(list);
 
-    Map<String, dynamic> hasil = {'$negara': kota};
-    await Future.delayed(Duration(seconds: 1), (){
-      print(hasil);
-    }); 
+  print('List Negara $list');
+  print('===============================================');
+  await Future.delayed(Duration(seconds: 1), () {
+    print('Map Negara : $listBaru ');
+  });
+}
+
+Map<String, String> mapBaru(List list) {
+  final Map<String, String> hasil = {};
+
+  for (var element in list) {
+    if (element.length == 2) {
+      hasil[element.first] = element.last;
+    }
   }
+  return hasil;
 }
