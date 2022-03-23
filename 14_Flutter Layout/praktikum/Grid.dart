@@ -23,6 +23,8 @@ class _GridState extends State<Grid> {
           return Container(
             child: Card(
               color: Colors.deepPurpleAccent,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(100)),
             ),
           );
         }),
